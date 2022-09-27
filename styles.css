@@ -1,0 +1,172 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+}
+/*LOGO ALURA*/
+header {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+#alura_icon {
+  margin-top: 30%;
+  height: 40px;
+  width: 40px;
+}
+/*LOGO ALURA*/
+/*SECCION PRINCIPAL*/
+main {
+  grid-column: 2/3;
+  padding-top: 5%;
+}
+
+textarea {
+  background-color: white;
+  height: 70%;
+  width: 90%;
+  border: 2px grey solid;
+  box-shadow: 0px 11px 50px -13px #000000;
+  font-size: 20px;
+}
+
+#information {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#information > h3 {
+  margin-left: 2%;
+}
+
+#information > img {
+  height: 20px;
+  width: 20px;
+}
+
+#botones {
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#botones > input {
+  border-radius: 32px 32px 32px 32px;
+  -moz-border-radius: 32px 32px 32px 32px;
+  -webkit-border-radius: 32px 32px 32px 32px;
+  width: 40%;
+  height: 60%;
+  background-color: #d8dfe8;
+}
+
+@keyframes background_color {
+  from {
+    background-color: #d8dfe8;
+  }
+  to {
+    background-color: #0a3871;
+    color: white;
+  }
+}
+
+#encriptar:hover {
+  animation: background_color 0.5s forwards;
+}
+#desencriptar:hover {
+  animation: background_color 0.5s forwards;
+}
+
+/*SECCION PRINCIPAL*/
+/*ASIDE*/
+aside {
+  grid-column: 3/4;
+  display: flex;
+  padding: 4%;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#resultado {
+  background-color: white;
+  height: 70%;
+  width: 100%;
+  border: 2px grey solid;
+  box-shadow: 0px 11px 50px -13px #000000;
+  text-align: center;
+  padding-top: 20%;
+}
+#texto_final {
+  display: none;
+  font-size: 18px;
+}
+#texto_error {
+  display: none;
+  color: red;
+}
+#resultado > img {
+  width: 40%;
+  height: 40%;
+}
+
+#author {
+  width: 100%;
+  height: 20%;
+  opacity: 0.3;
+  font-size: 15px;
+  text-align: end;
+  text-decoration-line: underline;
+}
+/*ASIDE*/
+/*--------------RESPONSIVE---------------*/
+@media (min-width: 400px) and (max-width: 800px) {
+  body {
+    height: 900px;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 60% 30%;
+  }
+  header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #alura_icon {
+    margin-top: 0%;
+  }
+  main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  textarea {
+    margin-left: 5%;
+  }
+  #information {
+    justify-content: center;
+  }
+  #information > h3 {
+    font-size: 15px;
+  }
+
+  #encriptar:hover {
+    animation: none;
+  }
+  #desencriptar:hover {
+    animation: none;
+  }
+  aside {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #resultado > img {
+    display: none;
+  }
+}
+
+/*LOGO ALURA*/
+
+/*LOGO ALURA*/
